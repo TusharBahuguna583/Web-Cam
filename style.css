@@ -2,6 +2,7 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -12,6 +13,7 @@ body {
     width: 100vw;
     background-color: black;
 }
+
 video {
     width: 100%;
     height: 100%;
@@ -22,7 +24,7 @@ video {
     width: 5rem;
     /* background-color: lightblue; */
     position: absolute;
-    top: calc( ( 100vh - 12rem ) / 2 );
+    top: calc((100vh - 12rem) / 2);
     right: 5rem;
     color: white;
     display: flex;
@@ -30,7 +32,8 @@ video {
     justify-content: space-between;
     z-index: 2;
 }
-.action-cont > * {
+
+.action-cont>* {
     width: 100%;
     height: 5rem;
     border-radius: 50%;
@@ -39,12 +42,14 @@ video {
     justify-content: center;
     align-items: center;
 }
+
 .record-btn {
     background-color: red;
     height: 3rem;
     width: 3rem;
     border-radius: 50%;
 }
+
 .capture-btn {
     background-color: white;
     height: 3rem;
@@ -68,18 +73,22 @@ video {
     0% {
         transform: scale(1);
     }
-    50%{
+
+    50% {
         transform: scale(0.8);
         opacity: 0.5;
     }
+
     100% {
         transform: scale(1);
     }
 }
+
 @keyframes scale-capture {
     0% {
         transform: scale(1);
     }
+
     100% {
         transform: scale(0.9);
     }
@@ -87,18 +96,19 @@ video {
 
 .timer-cont {
     position: absolute;
-    top:3rem;
+    top: 3rem;
     left: 4.5rem;
     color: white;
     font-size: 0.8rem;
 }
+
 .timer {
     display: none;
 }
 
 .filter-cont {
     position: absolute;
-    top: calc( (100vh - 16rem ) / 2 );
+    top: calc((100vh - 16rem) / 2);
     left: 5rem;
     height: 16rem;
     width: 5rem;
@@ -118,12 +128,15 @@ video {
 .orange {
     background-color: #ffa50052;
 }
+
 .brown {
     background-color: #a52a2a59;
 }
+
 .pink {
     background-color: #ffc0cb57;
 }
+
 .transparent {
     background-color: transparent;
 }
@@ -131,7 +144,7 @@ video {
 .filter-layer {
     position: absolute;
     top: 0;
-    left:calc((100vh - 10rem) / 2);
+    left: calc((100vh - 10rem) / 2);
     height: 100vh;
     width: 65%;
     z-index: 1;
@@ -141,12 +154,14 @@ video {
     color: white;
     font-size: 3rem;
 }
+
 .gallery {
     position: absolute;
     right: 6rem;
     bottom: 7rem;
     z-index: 2;
 }
+
 .gallery:hover {
     cursor: pointer;
 }

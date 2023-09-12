@@ -99,8 +99,12 @@ captureBtnCont.addEventListener("click", (e) => {
 let timerID;
 let counter = 0; // Represents total seconds
 let timer = document.querySelector(".timer");
+
 function startTimer() {
     timer.style.display = "block";
+    let hours=0;
+    let minutes=0;
+    let seconds=0;
     function displayTimer() {
         let totalSeconds = counter;
 
@@ -123,6 +127,7 @@ function startTimer() {
 
     timerID = setInterval(displayTimer, 1000);
 }
+
 function stopTimer() {
     clearInterval(timerID);
     timer.innerText = "00:00:00";
